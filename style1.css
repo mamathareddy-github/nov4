@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p{
+    background-color: black;
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+}
+img{
+    position: relative;
+    width: 100%;
+}
+body{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    margin: 20px;
+}
+@media screen and (max-width: 980px){
+    body{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width: 600px) {
+    body{
+        grid-template-columns: 1fr;
+    }
+}
